@@ -132,12 +132,12 @@ a {
 }
 
 .projects-dropdown:hover .projects-panel,
-.projects-dropdown:focus-within .projects-panel {
+.projects-dropdown.is-open .projects-panel {
   display: block;
 }
 
 .projects-dropdown:hover .projects-caret,
-.projects-dropdown:focus-within .projects-caret {
+.projects-dropdown.is-open .projects-caret {
   transform: rotate(45deg) translateY(-1px);
 }
 

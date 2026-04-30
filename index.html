@@ -18,7 +18,7 @@
           <span class="brand-text">MemX</span>
         </a>
         <div class="projects-dropdown">
-          <button class="projects-trigger" type="button" aria-haspopup="true">
+          <button class="projects-trigger" type="button" aria-haspopup="true" aria-expanded="false">
             Projects
             <span class="projects-caret"></span>
           </button>
@@ -43,7 +43,7 @@
         <div class="hero-badge">next-generation cloud memory systems</div>
         <h1>Building next-gen memory for cloud.</h1>
         <p class="hero-text">
-          MemX is an open-source research platform for next-generation software-defined memory in the cloud. 
+          MemX is an open-source research platform for software-defined memory in the cloud. 
         </p>
         <div class="hero-actions">
           <a class="solid-button" href="https://memx-lab.github.io/docs/">
@@ -55,5 +55,34 @@
         </div>
       </main>
     </div>
+    <script>
+      const dropdown = document.querySelector('.projects-dropdown');
+      const trigger = document.querySelector('.projects-trigger');
+
+      if (dropdown && trigger) {
+        trigger.addEventListener('click', (event) => {
+          event.stopPropagation();
+          const isOpen = dropdown.classList.toggle('is-open');
+          trigger.setAttribute('aria-expanded', String(isOpen));
+          if (!isOpen) {
+            trigger.blur();
+          }
+        });
+
+        document.addEventListener('click', (event) => {
+          if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove('is-open');
+            trigger.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') {
+            dropdown.classList.remove('is-open');
+            trigger.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    </script>
   </body>
 </html>
