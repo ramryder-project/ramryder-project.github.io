@@ -3,55 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MemX</title>
+    <title>RamRyder</title>
     <meta
       name="description"
-      content="MemX is building next-generation memory for cloud systems."
+      content="RamRyder is a software-defined elastic memory system for cloud virtual machines."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="site-shell">
       <header class="topbar">
-        <a class="brand" href="/">
-          <img class="brand-mark" src="./memx-logo.svg" alt="MemX logo" />
-          <span class="brand-text">MemX</span>
-        </a>
-        <div class="projects-dropdown">
-          <button class="projects-trigger" type="button" aria-haspopup="true">
-            Projects
-            <span class="projects-caret"></span>
-          </button>
-          <div class="projects-panel">
-            <a class="projects-item" href="https://memx-lab.github.io/docs/memx-ramryder/overview">
-              <span class="projects-item-title">RamRyder</span>
-              <span class="projects-item-text">Software-defined memory for cloud virtual machines.</span>
-            </a>
-            <a class="projects-item" href="https://memx-lab.github.io/docs/memx-ramos/overview">
-              <span class="projects-item-title">RAMOS</span>
-              <span class="projects-item-text">Operating system support for software-defined memory.</span>
-            </a>
-          </div>
-        </div>
+        <a class="brand" href="/">RamRyder</a>
         <nav class="nav">
-          <a href="https://github.com/memx-lab">GitHub</a>
-          <a href="https://memx-lab.github.io/docs/">Docs</a>
+          <a href="https://github.com/memx-lab/ramryder">GitHub</a>
         </nav>
       </header>
 
       <main class="hero">
-        <div class="hero-badge">next-generation cloud memory systems</div>
-        <h1>Building next-gen memory for cloud.</h1>
-        <p class="hero-text">
-          MemX is an open-source research platform for software-defined memory in the cloud. 
-        </p>
-        <div class="hero-actions">
-          <a class="solid-button" href="https://memx-lab.github.io/docs/">
-            Read Docs
-          </a>
-          <a class="ghost-button" href="https://github.com/memx-lab">
-            GitHub
-          </a>
+        <div class="hero-left">
+          <h1>Software-Defined Elastic Memory for Cloud VMs</h1>
+          <p class="hero-text">
+            RamRyder manages and allocates memory channels in software, allowing each virtual
+            machine to scale memory capacity and bandwidth based on workload demand.
+          </p>
+          <div class="hero-actions">
+            <a class="solid-button" href="https://github.com/memx-lab/ramryder">
+              Get Started
+            </a>
+            <a class="ghost-button" href="https://memx-lab.github.io/docs/memx-ramryder/overview">
+              Document
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <figure class="hero-logo-wrap">
+            <img class="hero-logo" src="./logos/logo_large_no_bg_new.png" alt="RamRyder logo" />
+          </figure>
         </div>
       </main>
     </div>
