@@ -1,6 +1,6 @@
-# memx-lab.github.io
+# ramryder-project.github.io
 
-Homepage repository template for the `memx-lab` GitHub organization.
+Homepage repository template for the `ramryder-project` GitHub organization.
 
 ## Purpose
 
@@ -8,7 +8,7 @@ This repository is the public-facing homepage, separate from the documentation p
 
 It should answer:
 
-- What is memx-lab?
+- What is ramryder-project?
 - Why does it exist?
 - Which projects belong to it?
 - Where should users start?
@@ -37,8 +37,8 @@ Then visit:
 
 Push this folder into a repository named:
 
-- `memx-lab.github.io`
+- `ramryder-project.github.io`
 
 GitHub Pages will then publish it at:
 
-- `https://memx-lab.github.io/`
+- `https://ramryder-project.github.io/`
